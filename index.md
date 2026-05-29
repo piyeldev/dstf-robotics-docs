@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "SWAGI BloomBot"
-  text: "Arcelo MNHS's DSTF Robotics RIM Entry Documentation"
+  text: "Documentation of Arcelo MNHS's DSTF RIM-T Entry"
   image:
     src: /assets/robot-swagi.png
     alt: swagi-bloombot
@@ -12,3 +12,5 @@ hero:
     - theme: brand
       text: Documentation
       link: /01-welcome
+
+---
