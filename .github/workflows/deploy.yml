@@ -36,8 +36,7 @@ jobs:
       #   with:
       #     version: 9 # Not needed if you've set "packageManager" in package.json
       - name: Setup Bun
-      - uses: oven-sh/setup-bun@v1 # Uncomment this if you're using Bun
-        # uses: actions/setup-node@v6
+        uses: oven-sh/setup-bun@v1 # Uncomment this if you're using Bun
         with:
           bun-version: latest
       - name: Setup Pages
