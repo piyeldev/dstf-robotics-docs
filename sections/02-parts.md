@@ -40,7 +40,7 @@ Used to power the robot overall. Unlike a regular AA battery, this battery is mu
 - Discharge Cut-off Voltage: 3.0V  
 - Capacity: 2200mAh  
 - Size: 18.5x65.2mm  
-- Protected: NO  
+- Protected: NO (be careful)
 - Battery top: Flat top  
 - Max Constant Charging Current: 2200mA(1C)  
 - Max Constant Discharging Current: 4400mA(2C)  
@@ -66,7 +66,7 @@ This is the <a>microcontroller</a> that facilitates communications between phone
 ### Arduino Uno R3
 <img src="/assets/arduino-uno.png" alt="arduino uno" width="300" />
 
-This is the main microcontroller that controls everything. This is slightly the same as the ESP32 in terms of capabilities, but it featues a bigger form factor, more pinouts (the blacks on the side), and more hardware capabilities. But unlike the ESP32, it doesn't feature any wireless connectivity, that's why we used an ESP32 together with it. To program this board, we use a USB type-B to type-A connector, and connect it to our computer that has Arduino IDE installed.
+This is the microcontroller that movement. This is slightly the similar as the ESP32 in terms of capabilities, but it featues a bigger form factor, and more pinouts (the female headers on the side). But unlike the ESP32, it doesn't feature any wireless connectivity, that's why we used an ESP32 together with it. To program this board, we use a USB type-B to type-A connector, and connect it to our computer that has Arduino IDE installed.
 
 **Specifications:**
 - Microcontroller: DIP ATmega328  
@@ -97,7 +97,7 @@ This is the board that facilitates communication between Arduino and the motors,
 - Reset button
 - 2 external terminal power interface, for separate logic/motor supplies
 
-### F5305s Power <a>MOSFET</a>
+### F5305s Power <a href="/03-definition-of-terms#mosfet">MOSFET</a>
 <img src="/assets/f5305s-power-mosfet.png" alt="f5305s power mosfet" width="300" />
 
 This is the part that is used to switch the two diaphraghm pumps on or off. This works by using two terminals (+ and -), for controlling the on or off state, and another two terminals (+ and -), to supply electricity. This was used because the pump needed more voltage and current, more than what the microcontrollers can provide (microcontroller: 3V or 5V, needed: 6V-7V).

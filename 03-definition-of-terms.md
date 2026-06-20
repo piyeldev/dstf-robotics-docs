@@ -18,3 +18,18 @@ Torque is a measure of the rotational force (or "twisting" power) acting on an o
 
 ### Stalling
 Motor stalling means that the electric motor has more load on it than it is designed for and it can no longer supply enough torque (rotational power) to keep it spinning.
+
+### nominal
+"nominal" represent the ideal, expected, or target level of operation under normal conditions.
+
+### GPIO
+GPIOs are the physical metal pins sticking out of the board (or look like plastic slots, called female headers). They act as the primary bridge between your software code and the physical hardware world.
+
+### Serial Communication
+Serial Communication refers to Universal Asynchronous Receiver-Transmitter (UART).
+It transfers data bit-by-bit sequentially over a two-wire interface consisting of a Transmit (TX) line and a Receive (RX) line.
+Think of it as sending a long word letter-by-letter down a single wire, rather than trying to send all the letters at the same time down multiple wires.
+This protocol is also used for debugging.
+
+### MOSFET
+A MOSFET is an electronic high-speed water valve, but instead of controlling water, it uses a tiny voltage to control a massive rush of electricity.

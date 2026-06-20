@@ -22,7 +22,7 @@ Starting with the arduino, you can immediately notice that you can't see the ard
 
 To connect a DC motor to a terminal, solder a wire into the dc motors terminals, and connect it to the shield's terminals. The <a>polarity</a> is not important, as long as all motors have the same positioning of wires, and that the FORWARD command in the code (we will get into later) correctly moves the motors forward. 
 
-To connect a servo motor, use the SERVO terminals (bottom left corner). Make sure to identify the wires correctly as wrong connection can damage the servo motor. 
+To connect a servo motor, use the SERVO terminals (bottom left corner, three pins, or three wires). Make sure to identify the wires correctly as wrong connection can damage the servo motor. 
 
 For more information about the L293D Motor driver and how to use it, you may refer to <a href="https://lastminuteengineers.com/l293d-motor-driver-shield-arduino-tutorial/" target="_blank">this guide</a>.
 
@@ -34,7 +34,7 @@ This part is where we see the connections between the Arduino Uno and the ESP32.
 
 First, the ESP32 is powered from the arduino's 5V. If you're confused why it is wired into the shield instead, that's because the arduino uno at the bottom of the shield provides the current for the 5V lines in the shield. Grounding is also provided through the arduino's GND pinout, connected to the ESP32's GND pinout.
 
-Lastly, is the connection between the TX pinout of the ESP32 and the A5 pinout of the arduino uno. Looking at the pink wire's connection, you can see that it is still connected to the shield's lines. That's because that row in the shield is connected to the analog pinouts of the arduino at the bottom. Starting at the right most (relative to the horizontal positioning of the shield) is the A5, then to the left, is A0. This connection is one of the most important as this facilitates the communication between the Arduino Uno and ESP32, which will drive the motors to move the robot.
+Next, the connection between the TX pinout of the ESP32 and the A5 pinout of the arduino uno. Looking at the pink wire's connection, you can see that it is still connected to the shield's lines. That's because that row in the shield is connected to the analog pinouts of the arduino at the bottom. Starting at the right most (relative to the horizontal positioning of the shield) is the A5, then to the left, is A0. This connection is one of the most important as this facilitates the communication (<a href="/03-definition-of-terms#serial-communication">Serial Communication</a>) between the Arduino Uno and ESP32, which will drive the motors to move the robot.
 
 <img src="/assets/esp32_pinout.png" alt="ESP32 C3 SuperMini Pinout" width="500" /> 
 
@@ -49,4 +49,4 @@ Lastly, the F5305S Power MOSFET's OUT+ and OUT- is connected to the pumps. This 
 
 <img src="/assets/f5305s.png" alt="ESP and Arduino" width="500" /> 
 
-The guide above makes sure that you now know how to assemble the robot from the ground up. If that's not the case, read the guide again. And if you're read, we can now move on to the next section!
+The guide above makes sure that you now know how to assemble the robot from the ground up. If that's not the case, read the guide again. And if you're ready, we can now move on to the next section!
