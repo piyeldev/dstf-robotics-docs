@@ -6,7 +6,7 @@ hero:
   name: "SWAGI BloomBot"
   text: "Documentation of Arcelo MNHS's DSTF RIM-T Entry"
   image:
-    src: /assets/robot-swagi.png
+    src: /robot-swagi.png
     alt: swagi-bloombot
   actions:
     - theme: brand

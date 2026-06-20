@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "SWAGI BloomBot",
   description: "Arcelo MNHS's DSTF Robotics RIM Entry Documentation",
-  head: [['link', {rel: 'icon', href: '/assets/favicon.ico'}]],
+  head: [['link', {rel: 'icon', href: '/dstf-robotics-docs/favicon.ico'}]],
   base: '/dstf-robotics-docs/',
   
   themeConfig: {
@@ -38,7 +38,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/' }
+      { icon: 'github', link: 'https://github.com/piyeldev/dstf-robotics-docs' }
     ],
 
     outline: {
