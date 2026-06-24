@@ -1,25 +1,37 @@
 {
-  "hash": "d5923987",
+  "hash": "9ea7b700",
   "configHash": "8e11a4a5",
-  "lockfileHash": "e43b3eda",
-  "browserHash": "e2c68303",
+  "lockfileHash": "c43a94ff",
+  "browserHash": "1b0bf744",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "2fe76cf1",
+      "fileHash": "ba8de90e",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "a723ce5f",
+      "fileHash": "a4d542a4",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/dist/index.js",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "4854b6e3",
+      "fileHash": "38558a34",
+      "needsInterop": false
+    },
+    "vitepress-plugin-codeblocks-fold": {
+      "src": "../../../node_modules/vitepress-plugin-codeblocks-fold/lib/index.js",
+      "file": "vitepress-plugin-codeblocks-fold.js",
+      "fileHash": "5641cfd5",
+      "needsInterop": false
+    },
+    "medium-zoom": {
+      "src": "../../../node_modules/medium-zoom/dist/medium-zoom.esm.js",
+      "file": "medium-zoom.js",
+      "fileHash": "9904d5a8",
       "needsInterop": false
     }
   },

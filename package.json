@@ -5,6 +5,10 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.17"
+    "vitepress": "^2.0.0-alpha.17",
+    "vitepress-plugin-lightbox": "^1.0.3"
+  },
+  "dependencies": {
+    "vitepress-plugin-codeblocks-fold": "^1.2.35"
   }
 }

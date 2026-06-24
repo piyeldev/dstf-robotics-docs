@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import lightbox from 'vitepress-plugin-lightbox'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,6 +8,12 @@ export default defineConfig({
   head: [['link', {rel: 'icon', href: '/dstf-robotics-docs/favicon.ico'}]],
   base: '/dstf-robotics-docs/',
   
+  markdown: {
+    config: (md) => {
+      md.use(lightbox, {})
+    }
+  },
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: 'SWAGI BloomBot',
@@ -32,7 +39,7 @@ export default defineConfig({
           { text: '🔨 System Architecture', link: '/sections/01-system-architecture' },
           { text: '⚙️ Parts', link: '/sections/02-parts' },
           { text: '🔌 Wiring Diagram', link: '/sections/03-wiring-diagram' },
-          { text: '♾️ Arduino and ESP32 Software Fundamentals', link: '/sections/04-arduino-esp-fundamentals' },        
+          { text: '♾️ Arduino Programming Fundamentals', link: '/sections/04-arduino-programming-fundamentals' },        
           { text: '💻 Code Explanation', link: '/sections/05-code-explanation' },        ]
       }
     ],
@@ -42,9 +49,9 @@ export default defineConfig({
     ],
 
     outline: {
-      level: [2, 3],
+      level: [2, 4],
       label: 'On this page'
     }
-
+  
   }
 })

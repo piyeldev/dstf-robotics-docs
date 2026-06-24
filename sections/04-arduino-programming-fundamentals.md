@@ -263,10 +263,19 @@ activatePump();
 ### Arguments
 Arguments are values you can give to a function for it to use
 ```c
-void name(argument) {
-    Serial.println(argument)
+// first name is the argument
+void name(first_name) {
+    Serial.println(first_name)
 }
 ```
+### Syntax
+Here is the syntax for a function
+```
+<type> <nameOfFunction>(<arguments>) {
+    <code>
+}
+```
+(refer to variables part for the type)
 
 ## Controlling DC Motors
 
